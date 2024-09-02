@@ -4,53 +4,53 @@ title: Get Started
 custom_edit_url: null
 sidebar_label: Get Started
 ---
-This guide will help you to create a new extension with all the dependencies, starter code, and recommended folder pre-created. The starter code comes with pre-implemented OAuth flow and easy-to-set-up webhook configuration.
+This guide provides a step-by-step framework for creating a new extension. It includes all necessary dependencies, starter code, and a well-organized folder structure to streamline your development process. The provided starter code features a pre-implemented OAuth flow, simplifying authentication. Additionally, it offers an easy setup for webhook configuration, enabling seamless integration. Follow this guide to efficiently build and deploy your extension.
 
-## What you will learn?
+## What you'll learn?
 
-1. [Install FDK CLI](#install-fdk-cli)
-2. [Generate the starter code for your extension using FDK CLI](#generate-the-starter-code-for-extension)
-3. [Preview your extension on a development account](#preview-your-extension-on-a-development-account)
+You'll learn how to do the following tasks:
+1. [Installation of FDK CLI](#install-fdk-cli)
+2. [Generate starter code for your extension using FDK CLI](#generate-the-starter-code-for-extension)
+3. [Extension Preview on development account](#preview-your-extension-on-a-development-account)
 
-## Prerequisites
+## Pre-requisites
 
-To successfully complete this guide, you will need the following:
-* You have created a [partner account](https://partners.fynd.com).
-* You have created a [development account](docs/partners/testing-extension/development-acc.md#create-development-account).
-* You’ve installed one of these backend languages and package managers:
+Before getting started, you will need the following:
+* You've created a [Partner account](https://partners.fynd.com) and a [Development account](docs/partners/testing-extension/development-acc.md#create-development-account).
+* You’ve installed either of the following:
   * [Node.js (v16.x)](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) with npm
   * [Java (v17)](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) with maven
-* You have installed [Git](https://git-scm.com/downloads).
-* You have installed [Redis](https://redis.io/docs/latest/operate/oss_and_stack/install/install-redis/).
+* You've installed [Git](https://git-scm.com/downloads).
+* You've installed [Redis](https://redis.io/docs/latest/operate/oss_and_stack/install/install-redis/).[optional]
 
-## Install FDK CLI
+## Installation of FDK CLI
 
-FDK-CLI is a command-line interface tool to simplify the theme and extension development process. You can read the [documentation here](https://github.com/gofynd/fdk-cli).
+FDK-CLI is a command-line interface tool to simplify the theme and extension development process. For more information,read [fdk-cli](https://github.com/gofynd/fdk-cli).
 
-To install the latest version of FDK-CLI, run the following command in your terminal:
+- To install the latest version of FDK-CLI, run the following command in your terminal:
 
 ```bash
 npm install -g @gofynd/fdk-cli
 ```
-Check if `fdk-cli` is successfully installed by running this command:
+- Check if `fdk-cli` is successfully installed by running this command:
 
 ```bash
 fdk --version
 ```
 
-If it is installed successfully, it will return the version:
+If installed successfully, it will return the version:
 
 ![cli_version](https://cdn.pixelbin.io/v2/himanshu01010/original/Extension-build/fdk_install_version_v2.png)
 
 :::tip
-To see a list of available commands and their descriptions, use `fdk --help`.
+Refer lists of available commands and their descriptions, use `fdk --help`.
 :::
 
-## Generate the starter code for extension
+## Generate starter code for extension
 
 Follow below steps in FDK CLI to generate your extension's starter code:
 
-1. Login in to FDK-CLI using command below:
+1. Login to FDK-CLI using command below:
 
   ```bash
   fdk login
@@ -66,17 +66,19 @@ Follow below steps in FDK CLI to generate your extension's starter code:
   ```bash
   fdk extension init
   ```
+  :::info
   To know more about the init command, [click here](https://github.com/gofynd/fdk-cli/blob/master/README.md#extension-init).
+  :::
 
 :::note
 **Heads up!**
 
-When you run the `fdk extension init` command, you'll get prompted with two choices if you've already set up an extension:
+When you run the `fdk extension init` command, you'll be prompted with two choices if you've already set up an extension:
 
 1. Create a new extension
 2. Use an existing extension
 
-If you want to kickstart your extension from an existing one, just go with the second option. This will automatically skip steps 3 and 4, saving you some time.
+If you want to kickstart your extension from an existing one, choose second option. This will automatically skip steps 3 and 4, saving you some time.
 :::
 
 3. Enter **Extension** Name
@@ -117,7 +119,7 @@ FDK Client Library is a peer dependency in FDK Extension Library and contains al
 * [fdk-client-kotlin](https://github.com/gofynd/fdk-client-kotlin)
 :::
 
-## Preview your extension on a development account
+## Extension Preview on development account
 
 1. Run following `fdk` command to get the extension preview URL.
 
@@ -139,7 +141,7 @@ To install or preview a Private extension on any company, ensure the company is 
 
 ![extension_launch](https://cdn.pixelbin.io/v2/himanshu01010/original/Extension-build/extension_launch.png)
 
-Congratulations you have created your first extension. Start building your extension features by using our APIs and SDKs.
+Congratulations!! You have created your first extension. Now, start building your extension features by using APIs and SDKs.
 
 
 
@@ -151,8 +153,10 @@ Congratulations you have created your first extension. Start building your exten
   ```bash
   fdk login --host your-partner-domain
   ```
-  This command will change the active environment to the provided cluster host. For example, if your partner account exists at partners.fynd.com, you should use:
+- This command will change the active environment to the provided cluster host. For example, if your partner account exists at partners.fynd.com, you should use:
+
   ```bash
   fdk login --host partners.fynd.com
   ```
   This will set the active environment to the Fynd cluster.
+  
