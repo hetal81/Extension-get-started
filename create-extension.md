@@ -23,7 +23,7 @@ Before getting started, you'll need the following:
 * You've installed [Git](https://git-scm.com/downloads).
 * You've installed [Redis](https://redis.io/docs/latest/operate/oss_and_stack/install/install-redis/).[optional]
 
-## 1. Installation of FDK-CLI
+## 1. Installation of FDK CLI
 
 FDK-CLI is a command-line interface tool to simplify the development process of themes and extensions. It optimizes the development workflow by offering key commands for creating, testing, and launching projects efficiently. For more information, read [FDK-CLI](https://github.com/gofynd/fdk-cli).
 
@@ -120,7 +120,7 @@ FDK Client Library is a peer dependency in FDK Extension Library and contains al
 
 ## 3. Extension Preview on development account
 
-1. Run following `fdk` command to get the extension preview URL.
+1. Run the following `fdk` command to get the extension preview URL.
 
 ```bash
 fdk extension preview
@@ -139,7 +139,6 @@ To install or preview a Private extension on any company, ensure the company is 
 ![extension_launch](https://cdn.pixelbin.io/v2/himanshu01010/original/Extension-build/extension_launch.png)
 
 Congratulations!! You have created your first extension. Now, start building your extension features by using APIs and SDKs.
-
 
 
 
