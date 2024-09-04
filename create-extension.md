@@ -42,7 +42,7 @@ fdk --version
 To see list of available commands and their descriptions, use `fdk --help`.
 :::
 
-## 2. Generate the starter code for extension
+## 2. Generate the starter code for Extension
 
 Steps to generate your extension's starter code using FDK-CLI:
 
@@ -110,7 +110,7 @@ The FDK Extension library facilitates seamless configuration of authentication f
 
 #### FDK Client Libraries
 
-FDK Client Library is a peer dependency in FDK Extension Library and contains all the methods to call Fynd platform API's.
+The FDK Client Library is a peer dependency of the FDK Extension Library, providing all the necessary methods to interact with the Fynd platform APIs.
 
 * [fdk-client-javascript](https://github.com/gofynd/fdk-client-javascript)
 * [fdk-client-java](https://github.com/gofynd/fdk-client-java)
@@ -134,7 +134,7 @@ The above command will launch both the frontend and backend servers of your exte
 To install or preview a Private extension on any company, ensure the company is added as a subscriber to your extension first.
 :::
 
-2. Copy Preview URL and paste it into the browser to Install/Launch Extension
+2. Copy Preview URL into the browser to Install/Launch Extension
 
 ![extension_launch](https://cdn.pixelbin.io/v2/himanshu01010/original/Extension-build/extension_launch.png)
 
