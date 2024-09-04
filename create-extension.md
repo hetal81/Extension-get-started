@@ -16,7 +16,7 @@ You'll learn how to do the following tasks:
 Before getting started, you'll need the following:
 * You've created a [Partner account](https://partners.fynd.com) and a [Development account](docs/partners/testing-extension/development-acc.md#create-development-account).
 * You’ve installed either of the following:
-  * [Node.js (v16.x)](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) with npm
+  * [Node.js (v18.x)or higher version](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) with npm
   * [Java (v17)](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) with maven
 * You've installed [Git](https://git-scm.com/downloads).
 
