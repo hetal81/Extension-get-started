@@ -32,7 +32,7 @@ FDK-CLI is a command-line interface tool to simplify the development process of 
 npm install -g @gofynd/fdk-cli
 ```
 
-- To Check `fdk-cli` is successfully installed, run this command in your terminal:
+- To Check `fdk-cli` is successfully installed, run the following command in your terminal:
 ```bash
 fdk --version
 ```
