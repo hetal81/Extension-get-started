@@ -144,7 +144,7 @@ Congratulations!! You have created your first extension. Now, start building you
 ## Advance guide
 
 - If you want to use a different environment (cluster) for extension development, you can change the active environment by using the following command:
-
+  
   ```bash
   fdk login --host your-partner-domain
   ```
