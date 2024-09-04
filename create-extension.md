@@ -9,6 +9,7 @@ This guide provides a step-by-step framework for creating a new extension. It in
 ## What you'll learn?
 
 You'll learn how to do the following tasks:
+  
 - [What you'll learn?](#what-youll-learn)
 - [Prerequisites](#prerequisites)
 - [1. Installation of FDK CLI](#1-installation-of-fdk-cli)
@@ -26,7 +27,6 @@ Before getting started, you'll need the following:
   * [Node.js (v16.x)](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) with npm
   * [Java (v17)](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) with maven
 * You've installed [Git](https://git-scm.com/downloads).
-* You've installed [Redis](https://redis.io/docs/latest/operate/oss_and_stack/install/install-redis/).[optional]
 
 ## 1. Installation of FDK CLI
 
@@ -54,18 +54,18 @@ To see list of available commands and their descriptions, use `fdk --help`.
 
 Steps to generate your extension's starter code using FDK CLI:
 
-1. Login to FDK-CLI using command below:
+1. Login to FDK-CLI using the following command:
 
   ```bash
   fdk login
   ```
 
-  Verify if you're logged in by running the following command:
+2. Verify if you're logged in by running the following command:
   ```bash
   fdk user
   ```
 
-2. To create new extension run the following command:
+3. To create new extension run the following command:
 
   ```bash
   fdk extension init
@@ -82,7 +82,7 @@ When you run the `fdk extension init` command, you'll be prompted with two choic
 1. Create a new extension
 2. Use an existing extension
 
-If you want to kickstart your extension from an existing one, choose second option. This will automatically skip steps 3 and 4, saving you some time.
+If you want to start your extension from an existing one, select the second option. This will automatically bypass steps 3 and 4, saving you some time.
 :::
 
 3. Enter **Extension** Name
@@ -95,7 +95,9 @@ If you want to kickstart your extension from an existing one, choose second opti
 
   ![extension init](https://cdn.pixelbin.io/v2/himanshu01010/original/Extension-build/extension_init_3.png)
 
-  FDK-CLI will create the extension's folder into the current directory of the local system with starter code and register the extension in your [Fynd Partners](https://partners.fynd.com/) account. Navigate to Partner Panel > Extensions > Your Extension, to check and edit your extension's registration details
+:::info
+  FDK-CLI will create the extension's folder into the current directory of the local system with starter code and register the extension in your [Fynd Partners](https://partners.fynd.com/) account. _Navigate to Partner Panel > Extensions > Your Extension_, to check and edit your extension's registration details
+:::
 
 6. Change the directory to your extension's directory by running the following command:
 
