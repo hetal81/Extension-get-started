@@ -9,15 +9,10 @@ This guide provides a step-by-step framework for creating a new extension. It in
 ## What you'll learn?
 
 You'll learn how to do the following tasks:
-  
-- [What you'll learn?](#what-youll-learn)
-- [Prerequisites](#prerequisites)
+
 - [1. Installation of FDK CLI](#1-installation-of-fdk-cli)
 - [2. Generate the starter code for extension](#2-generate-the-starter-code-for-extension)
-    - [FDK Extension Libraries](#fdk-extension-libraries)
-    - [FDK Client Libraries](#fdk-client-libraries)
 - [3. Extension Preview on development account](#3-extension-preview-on-development-account)
-- [Advance guide](#advance-guide)
 
 ## Prerequisites
 
