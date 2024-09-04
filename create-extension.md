@@ -7,19 +7,16 @@ sidebar_label: Get Started
 This guide provides a step-by-step framework for creating a new extension. It includes all necessary dependencies, starter code, and a well-organized folder structure to streamline your development process. The provided starter code features a pre-implemented OAuth flow, simplifying authentication. Additionally, it offers an easy setup for webhook configuration, enabling seamless integration. Follow this guide to efficiently build and deploy your extension.
 
 ## What you'll learn?
-
 You'll learn how to do the following tasks:
-
-- [1. Installation of FDK CLI](#1-installation-of-fdk-cli)
-- [2. Generate the starter code for extension](#2-generate-the-starter-code-for-extension)
-- [3. Extension Preview on development account](#3-extension-preview-on-development-account)
+1. [Installation of FDK CLI](#1-installation-of-fdk-cli)
+2. [Generate the starter code for Extension](#2-generate-the-starter-code-for-extension)
+3. [Extension Preview on Development account](#3-extension-preview-on-development-account)
 
 ## Prerequisites
-
 Before getting started, you'll need the following:
 * You've created a [Partner account](https://partners.fynd.com) and a [Development account](docs/partners/testing-extension/development-acc.md#create-development-account).
 * You’ve installed either of the following:
-  * [Node.js (v16.x)](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) with npm
+  * [Node.js (v18.x)or higher version](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) with npm
   * [Java (v17)](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) with maven
 * You've installed [Git](https://git-scm.com/downloads).
 
@@ -45,9 +42,9 @@ fdk --version
 To see list of available commands and their descriptions, use `fdk --help`.
 :::
 
-## 2. Generate the starter code for extension
+## 2. Generate the starter code for Extension
 
-Steps to generate your extension's starter code using FDK CLI:
+Steps to generate your extension's starter code using FDK-CLI:
 
 1. Login to FDK-CLI using the following command:
 
@@ -55,7 +52,7 @@ Steps to generate your extension's starter code using FDK CLI:
   fdk login
   ```
 
-2. Verify if you're logged in by running the following command:
+2. Verify if you've logged in by running the following command:
   ```bash
   fdk user
   ```
@@ -101,18 +98,19 @@ If you want to start your extension from an existing one, select the second opti
   ```
 
 :::info
-Internally, FDK-CLI integrates the FDK Extension and Client libraries into the starter code. These libraries facilitate OAuth implementation, enable SDK method calls, and assist in configuring webhooks. For detailed guidance, refer to the documentation corresponding to your preferred technology stack.
+Internally, FDK-CLI integrates the FDK Extension and Client libraries into the starter code. The libraries facilitate OAuth implementation, enable SDK method calls, and assist in configuring webhooks. For detailed guidance, refer to the documentation corresponding to your preferred technology stack.
 
 #### FDK Extension Libraries
 
 The FDK Extension library facilitates seamless configuration of authentication for accessing Fynd Platform APIs and webhooks subscriptions. OAuth implementation is essential for establishing the necessary foundational authentication for both functionalities. Explore the following libraries in your preferred language.
 
+* [fdk-extension-python](https://github.com/gofynd/fdk-extension-python)
 * [fdk-extension-javascript](https://github.com/gofynd/fdk-extension-javascript)
 * [fdk-extension-java](https://github.com/gofynd/fdk-extension-java)
 
 #### FDK Client Libraries
 
-FDK Client Library is a peer dependency in FDK Extension Library and contains all the methods to call Fynd platform API's.
+The FDK Client Library is a peer dependency of the FDK Extension Library, providing all the necessary methods to interact with the Fynd platform APIs.
 
 * [fdk-client-javascript](https://github.com/gofynd/fdk-client-javascript)
 * [fdk-client-java](https://github.com/gofynd/fdk-client-java)
@@ -120,7 +118,7 @@ FDK Client Library is a peer dependency in FDK Extension Library and contains al
 * [fdk-client-kotlin](https://github.com/gofynd/fdk-client-kotlin)
 :::
 
-## 3. Extension Preview on development account
+## 3. Extension Preview on Development account
 
 1. Run the following `fdk` command to get the extension preview URL.
 
@@ -129,19 +127,18 @@ fdk extension preview
 ```
 
 :::info
-The above command will launch both the frontend and backend servers of your extension, followed by establishing a secure public tunnel, making your extension accessible to external users. For more information about this command, check out [this link](https://github.com/gofynd/fdk-cli/tree/master?tab=readme-ov-file#extension-preview-url).
+The above command will launch both the frontend and backend servers of your extension, followed by establishing a secure public tunnel, making your extension accessible publicly. For more information about this command, check out [this link](https://github.com/gofynd/fdk-cli/tree/master?tab=readme-ov-file#extension-preview-url).
 :::
 
 :::note
 To install or preview a Private extension on any company, ensure the company is added as a subscriber to your extension first.
 :::
 
-2. Copy Preview URL and paste it into the browser to Install/Launch Extension
+2. Copy Preview URL into the browser to Install/Launch Extension
 
 ![extension_launch](https://cdn.pixelbin.io/v2/himanshu01010/original/Extension-build/extension_launch.png)
 
 Congratulations!! You have created your first extension. Now, start building your extension features by using APIs and SDKs.
-
 
 
 ## Advance guide
