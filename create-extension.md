@@ -92,11 +92,17 @@ If you want to start your extension from an existing one, select the second opti
 :::
 
 6. Change the directory to your extension's directory by running the following command:
-
   ```javascript
   cd "Example Extension"
   ```
-
+7. Populate Data
+  ```javascript
+  fdk populate
+  ```
+:::info
+To ensure the initial setup of products is complete, the above command will generate random data needed for product population. However, if preferred, products can also be created manually.
+:::
+   
 :::info
 Internally, FDK-CLI integrates the FDK Extension and Client libraries into the starter code. The libraries facilitate OAuth implementation, enable SDK method calls, and assist in configuring webhooks. For detailed guidance, refer to the documentation corresponding to your preferred technology stack.
 
